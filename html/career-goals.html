@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8">
+    <title>Business Bunny Career Goals</title>
+</head>
+
+<body>
+    <header>
+        <div class="horizontal" id="header-horizontal">
+            <figure>
+                <a href="https://imginn.com/p/Bi7EWqbj5t9/">
+                    <img src="../resources/images/headshot.jpg" width="250" height="250" alt="PuiPui the Bunny working on a laptop">
+                </a>
+                <figcaption>PuiPui the Bunny, <cite>"Weekend at Last"</cite>, Instagram, May 18th 2018</figcaption>
+            </figure>
+            <div class="vertical" id="header-vertical">
+                <h1>Business Bunny, Ph.D</h1>
+                <p>
+                    Professional, Business-orientated Bunny dedicated to providing synergestic
+                    solutions to whatever problem you have
+                    <br>
+                    "Woah, what a bun!" - Boss Bunny, 2026
+                </p>
+                <address>
+                    <p>(999) 999-9999</p>
+                    <a href="mailto:bunny@businessbunny.com">bunny@businessbunny.com</a>
+                </address>
+                <nav>
+                    <a href="cover-letter.html" rel="noreferrer">Cover Letter</a>
+                    <a href="../index.html" rel="noreferrer">Resume</a>
+                </nav>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <video id="bg" src="../resources/video/meadow.mp4" muted loop autoplay playsinline></video>
+    <div id="banner">
+        <main>
+            <h1 class="centered">Contact Me</h1>
+            <hr>
+            <article>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt <span class="owugh">owugh</span> labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo <span class="owugh">owugh</span> consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat <span class="owugh">owugh</span> nulla pariatur.
+                    Excepteur sint occaecat <strong>cupidatat</strong> non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+                <hr>
+            </article>
+            <div id="form_div">
+                <form id="demoForm">
+                    <div>
+                        <label for="first">First Name:</label>
+                        <input type="text" name="first" id="first">
+                    </div>
+                    <div>
+                        <label for="last">Last Name:</label>
+                        <input type="text" name="last" id="last">
+                    </div>
+                    <div>
+                        <label for="company">Company Name:</label>
+                        <input type="text" name="company" id="company">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" name="number" id="number">
+                    </div>
+                    <div>
+                        <label for="message">About:</label>
+                        <textarea name="message" rows="4" cols="40" placeholder="Enter your message...." id="message"></textarea>
+                    </div>
+                    <div class="horizontal" style="justify-content: space-evenly;">
+                        <p>Best Time to Contact</p>
+                        <p>Method</p>
+                    </div>
+                    <div class="horizontal">
+                        <div class="vertical" id="radios">
+                            <div>
+                                <input type="radio" name="contact-time" value="a.m." id="am">
+                                <label for="am">A.M.</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="contact-time" value="p.m." id="pm">
+                                <label for="pm">P.M.</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="contact-time" value="anytime" id="anytime">
+                                <label for="anytime">Anytime</label>
+                            </div>
+                        </div>
+                        <label for="method"></label>
+                        <select name="method" id="method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div id="date">
+            <script>
+                document.getElementById("date").innerHTML = Date();
+            </script>
+             <script>
+                console.log("Thanks for visiting!")
+            </script>
+        </div>
+    </footer>
+    <script src="../owugh.js"></script>
+    <script>
+        document.getElementById('demoForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.reset();
+        alert("Thanks! This is a demo form — no data was sent.");
+    });
+    </script>
+</body>
+</html>

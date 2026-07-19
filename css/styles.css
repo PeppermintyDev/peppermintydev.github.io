@@ -1,0 +1,130 @@
+* {
+    font-family: "Comic Sans", "Comic Sans MS", "Comic Neue", cursive, sans;
+    overscroll-behavior: none;
+}
+
+hr {
+    margin: 0;
+}
+
+
+body {
+    background-color: peachpuff;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+    filter: blur(6px);
+    width: 110vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+header, footer {
+    z-index: 1;
+    background: peachpuff;
+    padding: 0 10px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#banner {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 1px 0;
+    flex-direction: column;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 2%;
+    flex: 1 0 auto;
+    width: 75%;
+    background: peachpuff;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+table {
+    border: 1px solid grey;
+}
+tr:nth-child(even) {
+    background-color: lavender;
+}
+
+span {
+    display: inline-block;
+}
+
+.owugh:hover {
+    cursor: help;
+    color: white;
+    user-select: none;
+}
+
+header p {
+    font-style: italic;
+}
+
+#animate {
+    animation: spin;
+    animation-duration: 1s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#date {
+    text-align: center;
+}
+
+#flicked {
+  offset-path: path('M 0 0 Q 150 -120 400 250');
+  offset-rotate: 0deg; 
+  animation: go 0.7s ease-in forwards, whirl 0.7s linear forwards;
+}
+@keyframes go { to { offset-distance: 100%; } }
+
+.centered {
+    text-align: center;
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#radios {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: square;
+} 
